@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1105,1458</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1105,1786</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Login_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -95,7 +95,7 @@
       <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="496,1393" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence sap:VirtualizedContainerService.HintSize="496,1721" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="uName" />
       <Variable x:TypeArguments="ss:SecureString" Name="uPass" />
@@ -105,19 +105,19 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Log in - Connected Office: Device Management" sap:VirtualizedContainerService.HintSize="434,1271" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="fae02589-e0ce-49a9-a719-510ac12972ae" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Log in - Connected Office: Device Management" sap:VirtualizedContainerService.HintSize="434,1599" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="fae02589-e0ce-49a9-a719-510ac12972ae" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence sap:VirtualizedContainerService.HintSize="400,1045" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence sap:VirtualizedContainerService.HintSize="400,1373" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:GetRobotCredential AssetName="MyPass" CacheStrategy="None" DisplayName="Get Credential" sap:VirtualizedContainerService.HintSize="338,181" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[uPass]" Username="[uName]">
+            <ui:GetRobotCredential AssetName="MyPass" CacheStrategy="None" DisplayName="Get Credential" sap:VirtualizedContainerService.HintSize="338,398" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[uPass]" Username="[uName]">
               <ui:GetRobotCredential.TimeoutMS>
                 <InArgument x:TypeArguments="x:Int32" />
               </ui:GetRobotCredential.TimeoutMS>
@@ -126,7 +126,7 @@
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="https://connectedoffice-devicemanagement.azurewebsites.net/Identity/Account/Login" DesignTimeRectangle="330, 381, 507, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT Input_Email'" FullSelectorArgument="&lt;webctrl id='Input_Email' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='Input_Email' tag='INPUT' type='email' class='form-control' aaname='Email' /&gt;" Guid="55e41e65-6733-49d2-89d0-7dd137e404e9" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAf8AAAAqCAYAAAC9dVKWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFbSURBVHhe7dmxagJBGIXRvP/DpQoiEUEsBMFaZS0m/IsOq+QFdu45cAud7T+d/WoAQBTxB4Awb/Gfpkc7nS9tszu0759fMzMzW/Gq59X16vtSj38dbPfH+aHr7f78FgBYq+p5db36vvwB0ONfhzUAYCyfje/xr6sB//gBYDzV9+r8S49/vRsAAMa07Lz4A0AA8QeAMOIPAGHEHwDCiD8AhBF/AAgj/gAQRvwBIIz4A0AY8QeAMOIPAGHEHwDCiD8AhBF/AAgj/gAQRvwBIIz4A0AY8QeAMOIPAGHEHwDCiD8AhBF/AAgj/gAQRvwBIIz4A0AY8QeAMOIPAGHEHwDCiD8AhPk3/pvdoV1v9+cnAGAU1ffq/EuP/+l8mQcAjOWz8T3+0/Ro2/1xPnQDAADrVz2vrlffq/MvPf6lDuqhuhqodwNmZma23lXPq+vL8Je3+AMA4xN/AIjS2h+M8vyk1/Gi5gAAAABJRU5ErkJggg==" InformativeScreenshot="779cde3f1302bf723ce3e141860c74d3.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Log in - Connected Office: Device Management' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target DesignTimeRectangle="330, 349, 38, 24" ElementType="Text" FriendlyName="'Email'" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='Email' check:innerText='Email' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACoAAAAcCAYAAAAX4C3rAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADeSURBVFhH7ZPRDYMgEIa7ig8+dCqTJi7SGJZpdBTrHCxxBTz0AFtTPVNM70uI4YTfzxMvcBJElBsR5UZEuRHRr3gqKMoaHnqc9s0VimYYJ0goqjuoSrMoGlWLCUexTXTe8Cv+SNR9IgW9u+LRuHVgl+u2TmozA9z9PTdMBt5x+FycMonSECIQ1ei51q0KMp0IfZltovjgaRDxKNAydnKhlnSVEOcc09F1qbe1oAHZieLxoGuy7OjCnjxFk0z/A+4WtSHR+NCdVVE/n/LM/t0dzRgR5UZEuRFRbk4iCvACyqA2TKEsG1cAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
@@ -137,7 +137,7 @@
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="https://connectedoffice-devicemanagement.azurewebsites.net/Identity/Account/Login" DesignTimeRectangle="330, 467, 507, 38" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" FriendlyName="'INPUT Input_Password'" FullSelectorArgument="&lt;webctrl id='Input_Password' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='Input_Password' tag='INPUT' type='password' class='form-control' aaname='Password' /&gt;" Guid="e4834fe3-5b42-4df4-8953-3b2d4ce2f474" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAf8AAAAqCAYAAAC9dVKWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFbSURBVHhe7dmxagJBGIXRvP/DpQoiEUEsBMFaZS0m/IsOq+QFdu45cAud7T+d/WoAQBTxB4Awb/Gfpkc7nS9tszu0759fMzMzW/Gq59X16vtSj38dbPfH+aHr7f78FgBYq+p5db36vvwB0ONfhzUAYCyfje/xr6sB//gBYDzV9+r8S49/vRsAAMa07Lz4A0AA8QeAMOIPAGHEHwDCiD8AhBF/AAgj/gAQRvwBIIz4A0AY8QeAMOIPAGHEHwDCiD8AhBF/AAgj/gAQRvwBIIz4A0AY8QeAMOIPAGHEHwDCiD8AhBF/AAgj/gAQRvwBIIz4A0AY8QeAMOIPAGHEHwDCiD8AhPk3/pvdoV1v9+cnAGAU1ffq/EuP/+l8mQcAjOWz8T3+0/Ro2/1xPnQDAADrVz2vrlffq/MvPf6lDuqhuhqodwNmZma23lXPq+vL8Je3+AMA4xN/AIjS2h+M8vyk1/Gi5gAAAABJRU5ErkJggg==" InformativeScreenshot="fb5db414711e8b6fc41a88a1757fbfbe.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Log in - Connected Office: Device Management' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target DesignTimeRectangle="330, 435, 66, 24" ElementType="Text" FriendlyName="'Password'" FullSelectorArgument="&lt;webctrl aaname='Password' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Password' tag='LABEL' type='' class='' check:innerText='Password' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEYAAAAcCAYAAADcO8kVAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHZSURBVFhH7ZTbjQIxDEW3lf3gg6qQkGgEjWgGQSlAHTSRjV+J49ji8bUa+UqjXRzHuT7jyU9JuUowgRJMoAQTKMEESjCBEkygBBMowYDup/K7OZUb/wSNYJ7Xsttsa5J+DuX85PW16j0wI4jn5bB+ON+AqcFy3m/L7rJiMt+BKeW21E9qeeD/NEH9U5uA4SF9XfaBsI5aO95r0DFFZ4wx2KvPsj70OSipK3721/qKSaMPyfkYjJ6YRzlqA3wnYYPtt97f87ERZQ6M076ao2vweWC6x8Ycakw3wntMfQ8Y7tV53MPHYGYTWuYzc8iLsI59qyxYazXQQ4XmxLCu4xFl4+jF5EV735sYAKEeTRdFb0/n9BHvb7vHWK32bGyYJjAJAOEvx3BdoKr4KDq7TZnTbLjXyX3rjhHJd23HfoKg4E1raMIAUufC9FB9qAExp+H/BcaDEIEhTfdKk90nTQGMbpAgjbHQo41HYJy99MK/BjPfEzJBrcF6cJ8mXmcwt0UfPAOVWl59Cxd9DI1QveEO88BInq6HPdt6H4Kx98vu8hgbRDN9XRugZvozTRkb1GAlNuVWvaznggExHNkLHp3cEUyqKcEESjCBEkygBBMowQRKMIESjKtS/gDxC7QpDe9GpQAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
@@ -149,6 +149,14 @@
                 <uix:TargetAnchorable BrowserURL="https://connectedoffice-devicemanagement.azurewebsites.net/Identity/Account/Login" DesignTimeRectangle="330, 569, 70, 38" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Log in'" FullSelectorArgument="&lt;webctrl id='login-submit' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='login-submit' tag='BUTTON' type='submit' class='btn btn-primary' aaname='Log in' check:innerText='Log in' /&gt;" Guid="5b4aad0a-dc1a-4031-90bb-31042178cac0" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEoAAAAqCAYAAAAUJM0rAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHxSURBVGhD7Zq/UsJAEId9DNEXsHFGH8mKwhFldCx5FPzTMSMl0llYMDRCD/SmEhpsKNb8Lke4JBeyRoiB2535ZiC3d2Q/9q66A5JghYhiRkTU59c33T8P6fSmQ4cXL06C2u+ehsqFGaEoDJzfdqlSfaWjyzc6rr07CWqHgzPfhSkrFAWLSLBNdpFKtUu15oe2Y4hCy7ncSXHgAk6WEYrC/rRNcBk4WYaIWoOIYiKimIgoJiKKiYhiIqKYiCgmeyJqQr25/+KeZxnbDJsV1Z7SjBbUa1vGtoqIKg0iiknhohqjhf4VHZbtEs3x1+tnrRtsvdlokvje8vQyiPmUGom5PAoVFbz0nFrhM322GAUEkswcj8aYlkMUYtxf5gTrrHJ+R3Gi0sYiz4NiVsXZcmykiIp1q/oTcnZVcaL6/ptbXzIoSslR881u0uQUFe8eEbVXotLGzOfqs2XrQbIzonxSD3PjLEnm5D/MSy7KEgkRq4gXk8zxpWX8Absnaltkito+OyHqL52wKUonquXFOkcd5JYDvmBKJ0p1Tyz+WxIonaiyIqKYiCgmIoqJiGJiFSXXfqKkXvupPwzkIpkBLpJdNwfajiEK1/BOrjoqweXOQu1wABfWq4kIDNQfB6rlsD9dBLWjk0xJiIgoifQQUawg+gFHLrp2MNPBlQAAAABJRU5ErkJggg==" InformativeScreenshot="080dfef72838da3e43f078f1d7b1871f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Log in - Connected Office: Device Management' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
               </uix:NClick.Target>
             </uix:NClick>
+            <Assign sap:VirtualizedContainerService.HintSize="338,71" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Boolean">[successLogin]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+              </Assign.Value>
+            </Assign>
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
