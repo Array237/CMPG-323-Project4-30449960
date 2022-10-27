@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1233,10163</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1233,10507</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>UD_TEST_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="41">
@@ -109,7 +109,7 @@
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="UD_TEST" sap:VirtualizedContainerService.HintSize="798,10098" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="UD_TEST" sap:VirtualizedContainerService.HintSize="798,10442" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="test" />
       <Variable x:TypeArguments="x:String" Name="webS" />
@@ -202,13 +202,13 @@
         </sc:BindingList>
       </ui:IfElseIf.ConditionBlocks>
     </ui:IfElseIf>
-    <uix:NApplicationCard AttachMode="SingleWindow" DisplayName="Use Browser Chrome: Zones - Connected Office: Device Management" sap:VirtualizedContainerService.HintSize="736,7440" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="b5163ab1-420d-440b-a101-87d71d62d10a" Version="V2">
+    <uix:NApplicationCard AttachMode="SingleWindow" DisplayName="Use Browser Chrome: Zones - Connected Office: Device Management" sap:VirtualizedContainerService.HintSize="736,7784" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="b5163ab1-420d-440b-a101-87d71d62d10a" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence sap:VirtualizedContainerService.HintSize="702,7214" sap2010:WorkflowViewState.IdRef="Sequence_8">
+          <Sequence sap:VirtualizedContainerService.HintSize="702,7558" sap2010:WorkflowViewState.IdRef="Sequence_8">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -268,7 +268,7 @@
                 </sc:BindingList>
               </ui:IfElseIf.ConditionBlocks>
             </ui:IfElseIf>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="640,5732" sap2010:WorkflowViewState.IdRef="Sequence_6">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="640,5870" sap2010:WorkflowViewState.IdRef="Sequence_6">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -351,13 +351,14 @@
                   </ActivityAction>
                 </ui:ForEachRow.Body>
               </ui:ForEachRow>
-              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[wData]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="578,2650" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+              <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="578,97" sap2010:WorkflowViewState.IdRef="Delay_1" />
+              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[wData]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="578,2651" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
                 <ui:ForEachRow.Body>
                   <ActivityAction x:TypeArguments="sd:DataRow">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="544,2524" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="544,2525" sap2010:WorkflowViewState.IdRef="Sequence_23">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -424,6 +425,11 @@
                 </ui:ForEachRow.Body>
               </ui:ForEachRow>
             </Sequence>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Home'" sap:VirtualizedContainerService.HintSize="640,166" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b5163ab1-420d-440b-a101-87d71d62d10a" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://connectedoffice-devicemanagement.azurewebsites.net/Devices" DesignTimeRectangle="8, 231, 292, 40" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Home'" FullSelectorArgument="&lt;webctrl aaname='Home' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Home' tag='A' type='' class='nav-link text-dark' check:innerText='Home' /&gt;" Guid="5f7bf08d-045c-4b23-8b2b-15c7a06fd838" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAASgAAAAsCAYAAADW4SW7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIkSURBVHhe7dkxThthFIXRLCoVVfaCROct0CKxCHoKehZAQ8MCKCK2kGxgYuN37d9mZMWKpXmRzpVO889oSPVpxvmWTev9/P0LYHFZ5UmggD6yypNAAX1klSeBAvrIKk8CBfSRVZ4ECugjqzwJFNBHVnkSKKCPrPIkUEAfWeVJoIA+ssqTQAF9ZJUngQL6yCpPAgX0kVWeBAroI6s8CRTQR1Z5Eiigj6zyJFBAH1nl6TKBer7/MX2/Wls9Tm9H196ebrbXru6m56NrAKOs8iRQQB9Z5UmggD6yytOSgXqZbj/PB/cvs9evn96H5+zv2/3d4Wx0cH1t85zje4A+ssrThQN10hCo17uZ62UXuSFQqyFOJ85uX/Nvep8eVofXQqSgr6zytESghniMb1xDtLahGd6wct/H43SdszxvONvFZ/esm+nhY/Os4WzmLQ/oIas8LfGJd/jptr/3+Hzuvr87O/gc/OL4UxPoIqs8LRCouTeeT5cL1Ok3uuGtCmglqzwt8QZ1/ifeuYHa/00xgv9JVnlaIlBr5/5IfmagxrNj+x/SgW6yytNCgdo4+MF7ax+YjX8J1Mb8/+QJFPSVVZ4uEyiAS8gqTwIF9JFVngQK6COrPAkU0EdWeRIooI+s8iRQQB9Z5UmggD6yypNAAX1klSeBAvrIKk8CBfSRVZ4ECugjqzwJFNBHVnkSKKCPrPIkUEAfWeVJoIA+ssqTQAF9bDdNfwBwpPJKHseNyQAAAABJRU5ErkJggg==" InformativeScreenshot="21e314f1595d959874a8fda93b14ff77.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Devices - Connected Office: Device Management' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
